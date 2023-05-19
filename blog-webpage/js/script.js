@@ -1,10 +1,7 @@
-$(document).ready(function(){
-    $nav = $('.nav');
-    $toggleCollapse = $('.toggle-collapse');
 
-    // click event on toggle menu
-    $toggleCollapse.click(function(){
-        $nav.toggleClass('collapse');
-        
-    })
-});
+new Glide('.glide', {
+    type: 'carousel',
+    autoplay: 3500, 
+    perView: 4,
+    gap: 20,
+}).mount();

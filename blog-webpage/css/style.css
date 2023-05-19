@@ -200,7 +200,9 @@ main .site-title .btn{
     padding: 1rem 3rem;
     cursor: pointer;
     font-size: 1rem;
-    font-family:var(--Livvic)
+    font-family:var(--Livvic);
+    transition: all 0.3s ease-in-out;
+
 }
 
 main .site-title .btn:hover{
@@ -209,6 +211,190 @@ main .site-title .btn:hover{
 }
 
 /* x Site Title x */
+
+
+/* Blog Carousel */
+
+.carousel{
+    height: 100%;
+    width: 100%;
+}
+
+.carousel > .wrapper {
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+}
+
+.carousel .wrapper .hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel .wrapper .hero h1 {
+    font-size: 3rem; 
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
+.carousel .wrapper .hero button.btn-articles {
+    justify-self: end;
+    padding: 14px 45px;
+    cursor: pointer;
+    border: 1px solid var(--text-light);
+    border-radius: 37px;
+    background: transparent;
+    -webkit-border-radius: 37px;
+    -moz-border-radius: 37px;
+    -ms-border-radius: 37px;
+    -o-border-radius: 37px;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    transition: all 0.3s ease-in-out;
+}
+
+.carousel .wrapper .hero button.btn-articles:hover {
+    background: var(--midnight);
+    color: var(--white);
+}
+
+/* Glide.js */
+
+.carousel .wrapper .glide {
+    margin-top: 25px;
+}
+
+.carousel .wrapper .glide .glide__slide {
+    padding: 15px;
+    padding-bottom: 15px;
+}
+
+.carousel .wrapper .glide .glide__slide .card {
+    height: 470px;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 2px 13px 1px rgba(0, 0, 0, 0.6);
+}
+
+.carousel .wrapper .glide .glide__slide .card img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.carousel .wrapper .glide .glide__slide .card .share {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 15px;
+    right: 15px;
+    font-size: 22px;
+}
+
+.carousel .wrapper .glide .glide__slide .card .content {
+    background-color: white;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    color: black;
+    z-index: 99;
+    padding: 20px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.carousel .wrapper .glide .glide__slide .card:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+.carousel .wrapper .glide .glide__slide .card .content span {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: -20%;
+    font-family: var(--Lexend);
+}
+
+.carousel .wrapper .glide .glide__slide .card .content h6 {
+    font-size: 1.2rem;
+    font-family: var(--Livvic);
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.carousel .wrapper .glide .glide__slide .card .content h6::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    background: black;
+    bottom: -8px;
+    left: 30%;
+}
+
+.carousel .wrapper .glide .glide__slide .card .content p{
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family: var(--Abel);
+}
+
+.carousel .wrapper.glide .glide__slide .card:hover .content {
+    bottom: 0;
+}
+
+.glide__arrows .glide__arrow--right{
+    right: .5em;
+}
+
+.glide__arrows .glide__arrow--left{
+    left: .5em;
+}
+
+.glide__arrows .glide__arrow {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    font-size: 26px;
+    color: black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    padding: 0;
+}
+
+/*x Glide.js x*/
+
+/*x  Blog Carousel  x*/
 
 /*  x Main Content x  */
 
