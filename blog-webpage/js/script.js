@@ -14,7 +14,7 @@ new Glide('.glide', {
         },
         576: {
             perView: 1
-        }
+        },
     }
 }).mount();
 
