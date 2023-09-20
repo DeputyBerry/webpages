@@ -2,447 +2,329 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloggy</title>
-    <!-- styling -->
-    <link rel="stylesheet" href="./blog-webpage/css/style.css">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="./blog-webpage/css/all.css">
+    <title>DEMO Smoothie Store</title>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Animate On Scroll Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- BOOTSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    " rel="stylesheet">
 
-    <!-- Glide.js mini-build -->
-    <link rel="stylesheet" href="./blog-webpage/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <!--Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!----------- Navigation ------------->
-
-    <nav class="nav">
-        <div class="nav-menu flex-row">
-            <div class="nav-brand">
-                <a href="#" class="text-gray">Bloggy</a>
-            </div>
-            <div class="toggle-collapse">
-                <div class="toggle-icons">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-            <div class="navbar">
-                <ul class="nav-items">
-                    <li class="nav-link">
-                        <a href="#">Home</a>
-                    </li>
-                </ul>
-                <ul class="nav-items">
-                    <li class="nav-link">
-                        <a href="#">Category</a>
-                    </li>
-                </ul>
-                <ul class="nav-items">
-                    <li class="nav-link">
-                        <a href="#">Archive</a>
-                    </li>
-                </ul>
-                <ul class="nav-items">
-                    <li class="nav-link">
-                        <a href="#">Pages</a>
-                    </li>
-                </ul>
-                <ul class="nav-items">
-                    <li class="nav-link">
-                        <a href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="social text-gray">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
+    <nav id="myNavBar" class="navbar navbar-expand-lg fixed-top opacity-hover-off">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="font-size: 2rem;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link" style="font-size: 2rem;">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" style="font-size: 2rem;">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" style="font-size: 2rem;">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-<!-----------x Navigation x------------->
+    <!-- HERO -->
+    <header class=" video-bg bg-img d-flex flex-column justify-content-between" id="home">
+        <!-- Video Background -->
+        <video class="video-bg__content" playsinline autoplay muted loop>
+            <source src="assets/production_id_4752336 (1080p).mp4" type="video/mp4">
+        </video>
+        <div></div>
+        <div class="d-flex flex-column text-center">
+            <span class="display-1 text-white">DAILY <br>DOSE OF FRESH </span>
+            <p><a href="#menu" class="btn btn-lg btn-dark hover-btn fs-3">See the menu</a></p>
+        </div>
+        <div class="d-flex">
+            <span class="bg-dark text-white p-3 h2">Open from 10am to 11pm - call 555-5555-5555</span>
+        </div>
+    </header>
 
-<!-------- Main site section ------->
-
-    <main>
-    <!--- Site Title --->
-
-        <section class="site-title">
-            <div class="site-background">
-                <video playsinline="playsinline" autoplay muted loop>
-                    <source src="./blog-webpage/assets/sea-20224.mp4" type="video/mp4">
-                </video>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
-                    <path fill="white" fill-opacity="1" 
-                        d="M0,288L30,266.7C60,245,120,203,180,192C240,181,300,203,360,192C420,181,480,139,540,133.3C600,128,660,160,720,154.7C780,149,840,107,900,96C960,85,1020,107,1080,128C1140,149,1200,171,1260,176C1320,181,1380,171,1410,165.3L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
-                    </path>
-                </svg>
-                <div class="content">
-                    <h3>Tours & Travel</h3>
-                <h1>Amazing Places on Earth</h1>
-                <button class="btn">Explore</button>
+    <div class="container-fluid bg-black text-white py-5 display-4 text-center" id="menu">
+        <div class="container-fluid">
+            <h1 class="text-center display-2 mn-5">MENU</h1>
+            <div class="text-center border border-dark">
+                <div class="d-flex">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Smoothies');" class="col-4 tablink p-3 hover-red" id="mainLink">Smoothies</a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Salads');" class="col-4 tablink p-3 hover-red">Salads</a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Sandwiches');" class="col-4 tablink p-3 hover-red">Sandwiches</a>
                 </div>
             </div>
-        </section>
 
-    <!--x Site Title x-->
+            <!-- Smoothies -->
 
+            <div id="Smoothies" class="container-fluid menu p-4 bg-white text-center">
 
-    <!-- Blog Carousel -->
-        <section class="carousel" data-aos="fade-up">
-            <div class="wrapper">
-                <div class="hero">
-                    <h1>Become a travel pro in one easy lesson</h1>
-                    <button class="btn-articles">Get Started Now</button>
+                <!-- Tropical Bliss-->
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-4 text-black"><b>Tropical Bliss</b></h1>
+                    <p class="text-muted">An exotic blend of juicy mango, pineapple, and creamy banana. A vacation in a glass.</p>
+                    <span class="badge bg-dark text-white">$6.50</span>
+                    <hr class="text-muted">
                 </div>
 
-                <div class="glide">
-                    <div class="glide__track" data-glide-el="track">
-                        <ul class="glide__slides">
-                            <li class="glide__slide">
-                                <div class="card">
-                                    <img src="./blog-webpage/assets/Blog-post/post-1.jpg" alt="post-1">
-                                    <div class="share">
-                                    </div>
-                                    <div class="content">
-                                        <span>Travel Discounts</span>
-                                        <h6>Three ways to earn travel discounts and save!</h6>
-        
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, reiciendis!</p>
-                                    </div>
-                                </div>
-                            </li>
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-4 text-black"><b>Berry Boost</b></h1>
+                    <p class="text-muted">Brimming with antioxidants, this mix of blueberries, raspberries, and strawberries is both tangy and sweet.</p>
+                    <span class="badge bg-dark text-white">$7.00</span>
+                    <hr class="text-muted">
+                </div>
 
-                            <li class="glide__slide">
-                                <div class="card">
-                                    <img src="./blog-webpage/assets/Blog-post/post-2.jpg" alt="post-1">
-                                <div class="share">
-                                </div>
-                                <div class="content">
-                                    <span>Travel Discounts</span>
-                                    <h6>Three ways to earn travel discounts and save!</h6>
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Green Goodness</b></h1>
+                    <p class="text-muted">Get your greens in the most delicious way! Spinach, kale, avocado, and a touch of honey for natural sweetness.</p>
+                    <span class="badge bg-dark text-white">$7.50</span>
+                    <hr class="text-muted">
+                </div>
 
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, reiciendis!</p>
-                                </div>
-                            </div>
-                            </li>
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Nutty Professor</b></h1>
+                    <p class="text-muted">A protein-packed delight with almond butter, chia seeds, banana, and a splash of almond milk. Perfect post-workout fuel.</p>
+                    <span class="badge bg-dark text-white">$8.00</span>
+                    <hr class="text-muted">
+                </div>
 
-                            <li class="glide__slide">
-                                <div class="card">
-                                    <img src="./blog-webpage/assets/Blog-post/post-3.jpg" alt="post-1">
-                                    <div class="share">
-                                    </div>
-                                    <div class="content">
-                                        <span>Travel Discounts</span>
-                                        <h6>Three ways to earn travel discounts and save!</h6>
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Choco-Banana Bliss</b></h1>
+                    <p class="text-muted">Indulge guilt-free with this mix of ripe bananas, rich cocoa powder, and a hint of cinnamon.
+                    </p>
+                    <span class="badge bg-dark text-white">$7.00</span>
+                    <hr class="text-muted">
+                </div>
+
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Sunrise Detox</b></h1>
+                    <p class="text-muted">Start fresh with this cleansing blend of orange, carrot, ginger, and a touch of turmeric. Bright and invigorating!
+                    </p>
+                    <span class="badge bg-dark text-white">$7.50</span>
+                    <hr class="text-muted">
+                </div>
+
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Zen Matcha</b></h1>
+                    <p class="text-muted">Ground matcha green tea blended with banana, spinach, and coconut milk. A calming, focused energy boost.</p>
+                    <span class="badge bg-dark text-white">$8.50</span>
+                    <hr class="text-muted">
+                </div>
+            </div>
+
+            <!-- Salads-->
+
+            <div id="Salads" class="container-fluid menu p-4 bg-white">
+
+                <!-- Mediterranean Medley-->
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Mediterranean Medley</b></h1>
+                    <p class="text-muted">A delightful mix of cherry tomatoes, cucumbers, olives, feta cheese, and red onions, drizzled with a zesty lemon-oregano dressing.</p>
+                    <span class="badge bg-dark text-white">$12.50</span>
+                    <hr class="text-muted">
+                </div>
+
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Caesar's Choice</b></h1>
+                    <p class="text-muted">Crisp romaine lettuce, seasoned croutons, shaved parmesan, and classic Caesar dressing. Add grilled chicken for a protein boost.
+                    </p>
+                    <span class="badge bg-dark text-white">$11.00</span>
+                    <hr class="text-muted">
+                </div>
+
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Harvest Bowl</b></h1>
+                    <p class="text-muted">Roasted butternut squash, quinoa, cranberries, and toasted pecans, served on mixed greens with an apple cider vinaigrette.
+                    </p>
+                    <span class="badge bg-dark text-white">$14.00</span>
+                    <hr class="text-muted">
+                </div>
+
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Thai Crunch</b></h1>
+                    <p class="text-muted">Shredded cabbage, bell peppers, edamame, and crispy wontons, all tossed in a tangy peanut dressing. Topped with fresh cilantro.
+                    </p>
+                    <span class="badge bg-dark text-white">$13.50</span>
+                    <hr class="text-muted">
+                </div>
+
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Southwest Fiesta</b></h1>
+                    <p class="text-muted">Black beans, corn, avocado, cherry tomatoes, and red onions on a bed of iceberg lettuce. Garnished with tortilla strips and a zesty lime dressing.
+                    </p>
+                    <span class="badge bg-dark text-white">$12.00</span>
+                    <hr class="text-muted">
+                </div>
+
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Caprese Classic</b></h1>
+                    <p class="text-muted">Juicy tomatoes, fresh mozzarella slices, and basil leaves. Drizzled with balsamic glaze and extra virgin olive oil.
+                    </p>
+                    <span class="badge bg-dark text-white">$12.50</span>
+                    <hr class="text-muted">
+                </div>
+
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Superfood Spinach</b></h1>
+                    <p class="text-muted">Baby spinach leaves, blueberries, almonds, feta cheese, and red onions. Served with a blueberry vinaigrette.
+                    </p>
+                    <span class="badge bg-dark text-white">$14.50</span>
+                    <hr class="text-muted">
+                </div>
+
+            </div>
+
+            <!-- Sandwiches -->
+            <div id="Sandwiches" class="container-fluid menu p-4 bg-white">
+
+                <!-- The Classic Club -->
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>The Classic Club</b><span class="badge bg-grey small-tag ml-2 mb-5" style="font-size: 0.7rem;">Seasonal</span></h1>
+                    <p class="text-muted">Triple-layered with turkey, bacon, lettuce, tomato, and mayo on toasted whole grain bread.</p>
+                    <span class="badge bg-dark text-white">$12.50</span>
+                    <hr class="text-muted">
+                </div>
+
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Veggie Delight</b></h1>
+                    <p class="text-muted">Grilled zucchini, bell peppers, portobello mushrooms, and hummus spread on a warm ciabatta roll.</p>
+                    <span class="badge bg-dark text-white">$11.00</span>
+                    <hr class="text-muted">
+                </div>
+
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Tuna Temptation</b></h1>
+                    <p class="text-muted">Flaky tuna salad with capers, red onions, and a touch of lemon zest, served on rye.</p>
+                    <span class="badge bg-dark text-white">$13.00</span>
+                    <hr class="text-muted">
+                </div>
+
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>BBQ Pulled Pork</b></h1>
+                    <p class="text-muted">Tender pulled pork smothered in tangy BBQ sauce with a side of coleslaw, all tucked inside a soft brioche bun.</p>
+                    <span class="badge bg-dark text-white">$14.50</span>
+                    <hr class="text-muted">
+                </div>
+
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Roast beef & Cheddar</b></h1>
+                    <p class="text-muted">Thinly sliced roast beef, sharp cheddar, red onions, and horseradish mayo on a crusty baguette.
+                    </p>
+                    <span class="badge bg-dark text-white">$13.50</span>
+                    <hr class="text-muted">
+                </div>
+
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Caprese Ciabatta </b></h1>
+                    <p class="text-muted">Juicy tomatoes, fresh mozzarella, and basil pesto on toasted ciabatta. A taste of Italy.
+                    </p>
+                    <span class="badge bg-dark text-white">$12.00</span>
+                    <hr class="text-muted">
+                </div>
+
+                <div class="d-flex justify-content-between align-items baseline mb-3">
+                    <h1 class="mb-0 display-3 text-black"><b>Spicy Chicken Avocado Wrap  </b></h1>
+                    <p class="text-muted">Grilled chicken, sliced avocado, jalapeños, and a spicy chipotle mayo wrapped in a spinach tortilla.
+                    </p>
+                    <span class="badge bg-dark text-white">$13.00</span>
+                    <hr class="text-muted">
+                </div>
+
+                <!-- Starter Menu-->
+
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->  
     
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, reiciendis!</p>
-                                    </div>
-                            </div>
-                        </li>
-
-                        <li class="glide__slide">
-                            <div class="card">
-                                <img src="./blog-webpage/assets/Blog-post/post-4.png" alt="post-1">
-                                <div class="share">
-                                </div>
-                                <div class="content">
-                                    <span>Travel Discounts</span>
-                                    <h6>Three ways to earn travel discounts and save!</h6>
-
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, reiciendis!</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+    <div class="container-fluid py-5 text-white" style="background-color: darkslateblue;" id="about">
+        <div class="container">
+            <h1 class="text-center display-2 mb-3">ABOUT</h1>
+            <h2 class="display-4"><b>Opening Hours</b></h2>
+            <div class="row fs-2">
+                <div class="col-6">
+                    <p>Mon: CLOSED</p>
+                    <p>Tue: 10am - 11pm</p>
+                    <p>Wed: 10am - 10pm</p>
                 </div>
-
-                <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
-
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+                <div class="col-6">
+                    <p>Thu: 10am - 10pm</p>
+                    <p>Fri: 10am - 12pm</p>
+                    <p>Sat: 10am - 1am</p>
                 </div>
             </div>
-        </section>
 
-    <!--x Blog Carousel x-->
+            <h1 class="display-4"><b>History</b></h1>
+            <p class="fs-2">
+                Nestled in the heart of the bustling town of Everville, The Daily Delights Restaurant stands as a testament to culinary evolution and timeless passion. Established in 1980 by the talented and visionary chef, Anton Delacroix, this establishment began as a modest bistro aiming to bring a fusion of world flavors to the local community.Anton's travels across Europe and Asia profoundly influenced the restaurant's menu, blending traditional methods with avant-garde ingredients. With dishes inspired by sun-kissed Mediterranean coasts and the bustling streets of Bangkok, The Daily Delights quickly became Everville's culinary hotspot.
+            </p>
+            <div class="row">
+                <div class="col-lg-9 col-md-8 col-sm-12">
+                    <p class="fs-2">
 
-    <!-- Sidebar content -->
+                        The 90s brought a significant change when Anton’s daughter, Isabelle, introduced health-centric dishes after her studies on nutrition. Smoothies like "Tropical Bliss" and salads like "Mediterranean Medley" became instant hits, reflecting the era's shift towards health and wellness. Sandwiches, especially the Classic Club with its 'seasonal' tag, showcased the restaurant's commitment to using fresh, locally sourced produce.
 
-        <div class="container" data-aos="fade-up">
-            <div class="site-content" data-aos="fade-down" data-aos-delay="200">
-                <div class="posts" data-aos="fade-left" data-aos-delay="400">
-                    <div class="post-content" data-aos="fade-right" data-aos-delay="200">
-                        <div class="post-image" data-aos="zoom-in" data-aos-delay="400">
-                            <div>
-                                <img src="./blog-webpage/assets/popular-post/m-blog-1.jpg" class="img" alt="blog1">
-                            </div>
-                            <div class="post-info flex-row" data-aos="zoom-in" data-aos-delay="200">
-                                <span><i class="fas fa-user midnight"></i>&nbsp;&nbsp;Admin</span>
-                                <span><i class="fas fa-calendar-alt midnight"></i>&nbsp;&nbsp;May 19,2023</span>
-                                <span>2 Comments</span>
-                            </div>
-                        </div>
-                        <div class="post-title" data-aos="zoom-in-up" data-aos-delay="300">
-                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, cumque.</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus explicabo saepe repellendus quo, doloremque molestiae, iure esse soluta eum fuga laboriosam sit neque! Quo autem sapiente corporis nesciunt, praesentium ipsa libero, asperiores temporibus atque totam dolor similique quis repellendus?</p>
-                            <button class="read post-btn">Read more &nbsp;<i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="post-content" data-aos="fade-right" data-aos-delay="200">
-                        <div class="post-image" data-aos="zoom-in" data-aos-delay="400">
-                            <div>
-                                <img src="./blog-webpage/assets/popular-post/m-blog-2.jpg" class="img" alt="blog2">
-                            </div>
-                            <div class="post-info flex-row" data-aos="zoom-in" data-aos-delay="200">
-                                <span><i class="fas fa-user midnight"></i>&nbsp;&nbsp;Admin</span>
-                                <span><i class="fas fa-calendar-alt midnight"></i>&nbsp;&nbsp;May 19,2023</span>
-                                <span>2 Comments</span>
-                            </div>
-                        </div>
-                        <div class="post-title" data-aos="zoom-in-up" data-aos-delay="300">
-                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, cumque.</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus explicabo saepe repellendus quo, doloremque molestiae, iure esse soluta eum fuga laboriosam sit neque! Quo autem sapiente corporis nesciunt, praesentium ipsa libero, asperiores temporibus atque totam dolor similique quis repellendus?</p>
-                            <button class="read post-btn">Read more &nbsp;<i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="post-content" data-aos="fade-right" data-aos-delay="200">
-                        <div class="post-image" data-aos="zoom-in" data-aos-delay="400">
-                            <div>
-                                <img src="./blog-webpage/assets/popular-post/m-blog-3.jpg" class="img" alt="blog3">
-                            </div>
-                            <div class="post-info flex-row" data-aos="zoom-in" data-aos-delay="200">
-                                <span><i class="fas fa-user midnight"></i>&nbsp;&nbsp;Admin</span>
-                                <span><i class="fas fa-calendar-alt midnight"></i>&nbsp;&nbsp;May 19,2023</span>
-                                <span>2 Comments</span>
-                            </div>
-                        </div>
-                        <div class="post-title" data-aos="zoom-in-up" data-aos-delay="300">
-                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, cumque.</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus explicabo saepe repellendus quo, doloremque molestiae, iure esse soluta eum fuga laboriosam sit neque! Quo autem sapiente corporis nesciunt, praesentium ipsa libero, asperiores temporibus atque totam dolor similique quis repellendus?</p>
-                            <button class="read post-btn">Read more &nbsp;<i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="post-content" data-aos="fade-right" data-aos-delay="200">
-                        <div class="post-image" data-aos="zoom-in" data-aos-delay="100">
-                            <div>
-                                <img src="./blog-webpage/assets/popular-post/m-blog-4.jpg" class="img" alt="blog4">
-                            </div>
-                            <div class="post-info flex-row" data-aos="zoom-in" data-aos-delay="200">
-                                <span><i class="fas fa-user midnight"></i>&nbsp;&nbsp;Admin</span>
-                                <span><i class="fas fa-calendar-alt midnight"></i>&nbsp;&nbsp;May 19,2023</span>
-                                <span>2 Comments</span>
-                            </div>
-                        </div>
-                        <div class="post-title" data-aos="zoom-in-up" data-aos-delay="300">
-                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, cumque.</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus explicabo saepe repellendus quo, doloremque molestiae, iure esse soluta eum fuga laboriosam sit neque! Quo autem sapiente corporis nesciunt, praesentium ipsa libero, asperiores temporibus atque totam dolor similique quis repellendus?</p>
-                            <button class="read post-btn">Read more &nbsp;<i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="pagination flex-row">
-                        <a href="#"><i class="fas fa-chevron-left"></i></a>
-                        <a href="#" class="pages">1</a>
-                        <a href="#" class="pages">2</a>
-                        <a href="#" class="pages">3</a>
-                        <a href="#"><i class="fas fa-chevron-right"></i></a>
-                    </div>
+                        Now, over four decades later, while many eateries have come and gone, The Daily Delights remains a beloved icon. It's not just a restaurant; it's a chronicle of flavors, passion, and a community's shared memories.
+
+                    </p>
                 </div>
-                <aside class="sidebar" data-aos="fade-right">
-                    <div class="category" data-aos="flip-left" data-aos-delay="100">
-                        <h2>Category</h2>
-                        <ul class="category-list" data-aos="fade-up" data-aos-delay="200">
-                            <li class="list-items">
-                                <a href="#">Software</a>
-                                <span>(07)</span>
-                            </li>
-                            <li class="list-items">
-                                <a href="#">Technology</a>
-                                <span>(10)</span>
-                            </li>
-                            <li class="list-items">
-                                <a href="#">Lifestyle</a>
-                                <span>(15)</span>
-                            </li>
-                            <li class="list-items">
-                                <a href="#">Shopping</a>
-                                <span>(02)</span>
-                            </li>
-                            <li class="list-items">
-                                <a href="#">Food</a>
-                                <span>(09)</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="popular-post" data-aos="flip-right" data-aos-delay="300">
-                        <h2>Popular Post</h2>
-                        <div class="post-content" data-aos="fade-up" data-aos-delay="400">
-                            <div class="post-content">
-                                <div class="post-image">
-                                    <div>
-                                        <img src="./blog-webpage/assets/Blog-post/blog1.png" class="img" alt="blog1">
-                                    </div>
-                                    <div class="post-info flex-row">
-                                        <span><i class="fas fa-calendar-alt midnight"></i>&nbsp;&nbsp;May 26,2023</span>
-                                        <span>12 Comments</span>
-                                    </div>
-                                </div>
-                                <div class="post-title">
-                                    <a href="#">New data recording system to better analyze road accidents</a>
-                                </div>
-                            </div>
-                            <div class="post-content">
-                                <div class="post-image">
-                                    <div>
-                                        <img src="./blog-webpage/assets/Blog-post/blog2.png" class="img" alt="blog1">
-                                    </div>
-                                    <div class="post-info flex-row">
-                                        <span><i class="fas fa-calendar-alt midnight"></i>&nbsp;&nbsp;May 26,2023</span>
-                                        <span>12 Comments</span>
-                                    </div>
-                                </div>
-                                <div class="post-title">
-                                    <a href="#">New data recording system to better analyze road accidents</a>
-                                </div>
-                            </div>
-                            <div class="post-content">
-                                <div class="post-image">
-                                    <div>
-                                        <img src="./blog-webpage/assets/Blog-post/blog3.png" class="img" alt="blog1">
-                                    </div>
-                                    <div class="post-info flex-row">
-                                        <span><i class="fas fa-calendar-alt midnight"></i>&nbsp;&nbsp;May 26,2023</span>
-                                        <span>12 Comments</span>
-                                    </div>
-                                </div>
-                                <div class="post-title">
-                                    <a href="#">New data recording system to better analyze road accidents</a>
-                                </div>
-                            </div>
-                            <div class="post-content">
-                                <div class="post-image">
-                                    <div>
-                                        <img src="./blog-webpage/assets/Blog-post/blog4.png" class="img" alt="blog1">
-                                    </div>
-                                    <div class="post-info flex-row">
-                                        <span><i class="fas fa-calendar-alt midnight"></i>&nbsp;&nbsp;May 26,2023</span>
-                                        <span>12 Comments</span>
-                                    </div>
-                                </div>
-                                <div class="post-title">
-                                    <a href="#">New data recording system to better analyze road accidents</a>
-                                </div>
-                            </div>
-                            <div class="post-content">
-                                <div class="post-image">
-                                    <div>
-                                        <img src="./blog-webpage/assets/Blog-post/post-5.png" class="img" alt="blog1">
-                                    </div>
-                                    <div class="post-info flex-row">
-                                        <span><i class="fas fa-calendar-alt midnight"></i>&nbsp;&nbsp;May 26,2023</span>
-                                        <span>12 Comments</span>
-                                    </div>
-                                </div>
-                                <div class="post-title">
-                                    <a href="#">New data recording system to better analyze road accidents</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="newsletter" data-aos="flip-left" data-aos-delay="500">
-                        <h2>Newsletter</h2>
-                        <div class="form-element" data-aos="fade-up" data-aos-delay="600">
-                            <input type="text" class="input-element" placeholder="Email">
-                            <button class="btn form-btn">Subscribe</button>
-                        </div>
-                    </div>
-                    <div class="popular-tags" data-aos="flip-right" data-aos-delay="700">
-                        <h2>Popular Tags</h2>
-                        <div class="tags flex-row" data-aos="fade-up" data-aos-delay="800">
-                            <span class="tag">Software</span>
-                            <span class="tag">Technology</span>
-                            <span class="tag">Travel</span>
-                            <span class="tag">Illustrations</span>
-                            <span class="tag">Design</span>
-                            <span class="tag">Lifestyle</span>
-                            <span class="tag">Love</span>
-                            <span class="tag">Projects</span>
-                        </div>
-                    </div>
-                </aside>
+                <div class="col-lg-3 col-md-4 col-sm-12 text-end">
+                    <img src="/assets/febrian-zakaria-SiQgni-cqFg-unsplash.jpg" alt="chef" style="width: 200px; height: 200px; object-fit: cover;" class="rounded-circle">
+                </div>
             </div>
-        </div>
+            <p class="fs-2">Where traditions meet taste.</p>
+            <img src="/assets/dmitriy-k-4zTf1NVuw-0-unsplash.jpg" alt="restaurant" style="width: 100%" class="my-3 img-greyscale">
 
-    <!--x   Sidebar content   x-->
-
-    </main>
-
-<!------x Main site section x------->
-
-<!--     Footer     -->
-
-<footer class="footer">
-    <div class="container">
-        <div class="about-us">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa deserunt doloribus neque asperiores et iure similique molestias sapiente nulla voluptate.</p>
-        </div>
-        <div class="newsletter">
-            <h2>Newsletter</h2>
-            <p>Stay updated</p>
-            <div class="form-element">
-                <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
-            </div>
-        </div>
-        <div class="instagram">
-            <h2>Instagram</h2>
-            <div class="flex-row">
-                <img src="./blog-webpage/assets/instagram/thumb-card3.png" alt="insta3">
-                <img src="./blog-webpage/assets/instagram/thumb-card4.png" alt="insta4">
-                <img src="./blog-webpage/assets/instagram/thumb-card5.png" alt="insta5">
-            </div>
-            <div class="flex-row">
-                <img src="./blog-webpage/assets/instagram/thumb-card6.png" alt="insta6">
-                <img src="./blog-webpage/assets/instagram/thumb-card7.png" alt="insta7">
-                <img src="./blog-webpage/assets/instagram/thumb-card8.png" alt="insta8">
-            </div>
-        </div>
-        <div class="follow">
-            <h2>Follow Us</h2>
-            <p>Let's Connect together!</p>
-            <div class="">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
-            </div>
         </div>
     </div>
-    <div class="rights flex-row">
-        <h4 class="text-gray">
-            Copyright &copy; 2021 - All rights reserved
-        </h4>
-    </div>
-    <div class="move-up">
-        <span><i class="fas fa-arrow-circle-up fa-4x"></i></span>
-    </div>
-</footer>
 
-<!--x    Footer    x-->
+    <!-- CONTACT -->
 
-<script src="./blog-webpage/node_modules/@glidejs/glide/dist/glide.min.js"></script>
-<script src="./blog-webpage/js/script.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+    <div class="container-fluid bg-secondary text-white py-5 fs-2" id="contact">
+        <div class="container">
+            <h1 class="text-center display-2 mb-5">CONTACT</h1>
+            <p>Find us somewhere at sometime here, or call us here at 555-5555-5555!</p>
+            <p>
+                <span class="badge bg-dark">FYI!</span>
+                We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggest criteria of them all, both look and taste.
+            </p>
+            <p><b>Reserve</b> a table, ask for today's special or text us!</p>
+
+            <form action="" target="_blank">
+                <div class="mb-3">
+                    <input type="text" class="form-control extra-large" placeholder="Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control extra-large" placeholder="# of People" name="people" required>
+                </div>
+                <div class="mb-3">
+                    <input type="datetime-local" class="form-control extra-large" placeholder="date & time" name="date" value="Date.now()" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" placeholder="suggestions?/comments?" class="form-control extra-large">
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-light btn-lg btn-block fs-2">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="text-center bg-dark text-white py-4">
+        <p class="fs-3 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, natus?</p>
+        <p class="fs-3 mb-0"><a href="#">Lorem, ipsum dolor.</a></p>
+    </footer>
+
+    <script src="/script.js"></script>
 </body>
 </html>
